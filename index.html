@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Simulator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+        <h1>Vector Simulator: Force & Velocity</h1>
+    </header>
+    <main>
+        <div class="controls-container">
+            <section class="vector-controls" aria-labelledby="force-controls-heading">
+                <h2 id="force-controls-heading">Force Vector (F)</h2>
+                <div>
+                    <label for="force-magnitude">Magnitude (N):</label>
+                    <input type="number" id="force-magnitude" value="50" min="0" max="100" step="1">
+                    <input type="range" id="force-magnitude-slider" value="50" min="0" max="100" step="1" aria-labelledby="force-magnitude">
+                </div>
+                <div>
+                    <label for="force-direction">Direction (&deg;):</label>
+                    <input type="number" id="force-direction" value="45" min="0" max="360" step="1">
+                    <input type="range" id="force-direction-slider" value="45" min="0" max="360" step="1" aria-labelledby="force-direction">
+                </div>
+            </section>
+
+            <section class="vector-controls" aria-labelledby="velocity-controls-heading">
+                <h2 id="velocity-controls-heading">Velocity Vector (V)</h2>
+                <div>
+                    <label for="velocity-magnitude">Magnitude (m/s):</label>
+                    <input type="number" id="velocity-magnitude" value="30" min="0" max="100" step="1">
+                    <input type="range" id="velocity-magnitude-slider" value="30" min="0" max="100" step="1" aria-labelledby="velocity-magnitude">
+                </div>
+                <div>
+                    <label for="velocity-direction">Direction (&deg;):</label>
+                    <input type="number" id="velocity-direction" value="90" min="0" max="360" step="1">
+                    <input type="range" id="velocity-direction-slider" value="90" min="0" max="360" step="1" aria-labelledby="velocity-direction">
+                </div>
+            </section>
+        </div>
+
+        <section class="simulation-area" aria-label="Vector Visualization">
+            <canvas id="vectorCanvas" width="400" height="300" aria-describedby="canvas-description">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            <p id="canvas-description" class="sr-only">Visualization of force and velocity vectors. Force is shown in blue, velocity in green.</p>
+        </section>
+
+        <section class="explanation-area" aria-labelledby="explanation-heading">
+            <h2 id="explanation-heading">Understanding Vectors</h2>
+            <div id="textExplanation">
+                <!-- Content will be populated by JS -->
+            </div>
+        </section>
+
+        <section class="examples-area" aria-labelledby="examples-heading">
+            <h2 id="examples-heading">Exploring Different Scenarios</h2>
+            <div id="exampleCases">
+                <!-- Content will be populated by JS -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Adjust the magnitude and direction sliders to see how vectors change.</p>
+    </footer>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "SC0v4: Vectors - Magnitude and Direction",
+  "description": "Start of transcript. Skip to the end.\nWe now look at representing vectors by their magnitude\nand direction.\nIn this example, we have a force here.\nWe can represent this force by its magnitude, which\nis the length of the vector, and the angle from the x-axis\ngoing towards the y-axis.\nWe can also separately represent the velocity\nas a vector with its own magnitude and direction.\nNotice that in this example the velocity\nis in a different direction than the force.\nEnd of transcript. Skip to the start",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
